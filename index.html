@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!--This is just a basic landing page. Hello there!-->
 <head>
     <title>Billy Walker</title>
     <meta charset="UTF-8">
@@ -8,9 +7,7 @@
     <meta name="keywords" content="Web Developer, JavaScript, HTML, CSS">
     <meta name="author" content="Billy Walker">
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
-    <!--Comment for myself, really. This last line should be included on every site
-    for readability across all devices. Basically, this adjusts the viewport
-    to match whatever screen size the browser encounters.-->
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <header>
@@ -19,25 +16,22 @@
         <a href="./pages/prototyping.html">Prototyping</a>
         <h1>Billy Walker</h1>
         <h2>Do your best!</h2>
-        <figure>
-            <img src="./images/me.jpg" alt="A picture of me, taken recently." height="400" width="300">
-            <br/>
-            <figcaption>
-                An photo of myself I took recently. Felt a bit cute!
-            </figcaption>
-        </figure>
     </header>
     <br />
     <hr />
     <main>
-        <h3>About Me</h3>
-            <p>I'm a 25 year old chef retraining to be a web developer!
-             I hope I can have a more stable, relaxed life. Working as a chef
-            is very stressful, unfortunately.</p>
-            <p>I wrote a small game in Python and that kicked off a 
-            genuine interest in programming that 
-            brought me to where I am today!</p>
-        <h4>Qualities</h4>
+        <div id="about-me">
+            <h3>About Me</h3>
+            <img class="profile-pic" src="./images/me.jpg" alt="A picture of me, taken recently." height="400" width="300">
+            <p>I'm a 25 year old chef living and working in Manchester City.
+            <br>Right now, I'm re-training to be a web developer for a more relaxed life.
+                I started out writing games in Python and now here I am!</p>
+            <div>
+                <p>Outside of work, I enjoy tinkering with electronics and long-distance running</p>
+            </div>
+            
+        </div>
+        <h4 id="Qualities">Qualities</h4>
         <ol>
             <li>Persistence</li>
             <li>Curiousity</li>
@@ -73,6 +67,19 @@
                 A family portrait! Myself, my partner Lena, our cat Sergei, and over 50 different tropical houseplants! Watering takes nearly three days!
             </figcaption>
         </figure>
+        <div id="“socials”">
+            <h3>My Socials</h3>
+            <!-- /* These links are just a demo, so i've left the href blank. */ -->
+            <p>Follow me on <a href="">Twitter</a>!</p>
+            <p>Follow me on <a href="">Instagram</a>!</p>
+            <!-- /* The below are form elements, we will get to those later on so don't worry
+            about these just yet, we just need them for demo purposes */ -->
+            <input type="checkbox" id="box" name="test-checkbox" checked />
+            <label for="test-checkbox">Check this box for some reason</label>
+            <!-- /*The button below is just a demo, so it doesn't do anything, we will add the
+            disabled attribute though, more on that below...*/ -->
+            <button disabled>You can't press this...</button>
+          </div>
     </main>
     <footer>Created by Billy Walker, 4 April 2023</footer>
 </body>
