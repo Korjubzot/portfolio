@@ -4,14 +4,7 @@
     box-sizing: border-box;
     text-align: center;
     background-color: #E3FDFD;
-}
-
-h1 {
-    text-align: center;
-}
-
-h2 {
-    text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 .box-headers {
@@ -23,12 +16,12 @@ h2 {
 }
 
 .container1{
-    background-color: #A6E3E9;
+    background-color: #cacaca;
     padding: 10px;
     margin: 25px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -38,31 +31,78 @@ h2 {
     margin: 25px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
-/* .contactSheet{
-    background-color: #cacaca;
-    padding: 10px;
-    margin: 25px;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-} */
-
 .item {
-    /* background-color: #263A29; */
+    background-color: #cacaca;
     /* color:#fff; */
     font-size: 35px;
     /* padding: 20px; */
     margin: 10px;
 }
 
+.box-text {
+    background-color: #cacaca;
+}
+
+.box-headers {
+    background-color: #cacaca;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+}
+
+label {
+    grid-column: 1 / 2;
+}
+
+input,
+button {
+    grid-column: 2 / 3;
+}
+
+#nameBar {
+    grid-column-start: 1;
+}
+
+#emailBar {
+    grid-column-start: 2;
+}
+
+
+
+.headerContainer {
+    display: flex;
+    justify-content: end;
+}
+
+#footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.fa-brands {
+    grid-row-start: 2;
+}
+
+.fa-solid {
+    grid-row-start: 1;
+}
+
 /* desktop site */
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
     .container1{
         background-color: #ff0000;
         padding: 10px;
@@ -84,10 +124,10 @@ h2 {
     }
     
     .item {
-        /* background-color: #ff0037; */
+        background-color: #ff0037;
         color:#fff;
         font-size: 35px;
-        /* padding: 20px; */
+        padding: 20px;
         margin: 10px;
     }
-}
+} */
