@@ -17,57 +17,73 @@
 <body>
     <!--todo add color palettes-->
     <header>
-        <a href="./pages/contact.html">Contact Me</a>
-        <a href="./pages/projects.html">Projects</a>
-        <a href="./pages/prototyping.html">Prototyping</a>
-        <!-- todo: fix these to jump to locations on page. I remember how to do this, don't I? -->
+        <a class="header-links" href="#CONTACTME">Contact</a>
+        <a class="header-links" href="#PROJECTS">Projects</a>
+        <a class="header-links" href="#ABOUT">About</a>
     </header>
     <br />
+
+    <div class="hero-image">
+        <div class="hero-text">
+          <h1 class="hero-text-background">I am Billy Walker</h1>
+          <p class="hero-text-background">And I'm a Web Developer</p>
+          <button style="background-color: #E7AB9A;" onclick="document.location='#CONTACTME'">Contact me</button>
+        </div>
+      </div>
+
+
     <hr />
         <div class="container2">
             <div class="items-1 item">
                 <img class="profile-pic" src="./images/me.jpg" alt="A picture of me, taken recently." height="200" width="150">
             </div>
             <div class="items-2 item">
-                <h2 class="box-headers">About Me</h2>
-                <p class="box-text">
+                <h2 id="ABOUT" class="box-headers-2">About Me</h2>
+                <p class="box-text-2">
                     I'm a 25 year old chef living and working in Manchester City.
                     Right now, I'm re-training to be a web developer for a more relaxed life.
                     I started out writing games in Python and now here I am! Outside of work, 
                     I enjoy tinkering with electronics, houseplants, and long-distance running.
-                    You can contact me at <a class="box-text" href="mastodon.com">Mastodon</a>, <a class="box-text" href="instagram.com">Instagram</a>, or by <a class="box-text" href="mailto:korjubzot@gmail.com">email</a>.
+                    You can contact me at <a class="box-text-2" href="https://mastodon.social/@korjubzot">Mastodon</a>, <a class="box-text-2" href="https://www.instagram.com/korjubzot">Instagram</a>, or by <a class="box-text-2" href="mailto:korjubzot@gmail.com">email</a>.
                 </p>
             </div>
         </div>
 
         <div class="container1">
             <div class="box-headers">Placeholder</div>
+            <br>
+            <img src="./images/josh-hild-B-KNSrFgmA0-unsplash.jpg" height="300" width="300">
             <div class="items-2 item">
                 <p class="box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias expedita voluptatibus placeat. Quasi neque ipsam nemo aperiam earum molestiae blanditiis, iure provident aut error expedita corporis fuga non odit necessitatibus!</p>      
                 </div>
         </div>
 
         <div class="container1">
-            <div class="items-1 item">Placeholder</div>
+            <div class="box-headers">Placeholder</div>
+            <br>
+            <img src="./images/yana-marudova-4HUVNVIozbY-unsplash.jpg" height="300" width="300">
             <div class="items-2 item">
                 <p class="box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias expedita voluptatibus placeat. Quasi neque ipsam nemo aperiam earum molestiae blanditiis, iure provident aut error expedita corporis fuga non odit necessitatibus!</p>      
                 </div>
         </div>
 
         <div class="container2">
-                <p class="box-text">Check out some projects on <a class="box-text" href="https://github.com/Korjubzot">Github</a>.</p>
-                <img src="./images/github-mark.png" alt="The Github Invertocat logo." height="100" width="100">
+            <div class="items-2 item">
+                <h2 id="PROJECTS" class="box-headers-2">Projects</h2>
+                <p class="box-text-2">
+                    Check out some of my projects on <a class="box-text-2" href="https://github.com/Korjubzot">Github</a>. I'm also an
+                    amateur game designer, available on <a class="box-text-2" href="https://itch.io/Korjubzot">itch.io</a>
+                </p>
+            </div>
+            <div class="items-1 item">
+                <img class="profile-pic" src="./images/gxXgi2.png" alt="A screenshot of one of my games" height="100" width="150">
+            </div>
         </div>
-
-        <div class="container2">
-                <img style="color: #cacaca;" src="./images/itchio-logo-black.png" alt="itch.io logo." height="25" width="100">
-                <p class="box-text">I'm also an amateur game designer posting games on <a class="box-text" href="https://korjubzot.itch.io/">itch.io</a>.</p>
-        </div>        
 
         <!--todo improve contact sheet--> 
     <div class="contactContainer">
         <div class="Contacts">
-            <h3>CONTACT</h3>
+            <h3 id="CONTACTME">CONTACT</h3>
             <p>Need some work done? Get your best suit on, message me, we'll get it done together.</p>
         </div>
         <div class="contactForm">
@@ -78,19 +94,20 @@
                 <input id="email" type="text">
                 <label for="message" class="message">Message</label>
                 <input id="message" type="text">
+                <button>Submit</button>
                 <!-- more inputs -->
             </form>
         </div>
     </div>
     <!--todo socials-->
     <footer>
-        <span id="footer">
-            <p>Created by Billy Walker, 4 April 2023</p>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-solid fa-envelope"></i>
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-mastodon"></i>
-        </span>
+        <div class="footer">
+            <p class="footer">Created by Billy Walker, 4 April 2023</p>
+            <a href="https://www.instagram.com/korjubzot" class="fa-brands fa-instagram"></a>
+            <a href="mailto:korjubzot@gmail.com" class="fa-solid fa-envelope"></a>
+            <a href="https://github.com/Korjubzot" class="fa-brands fa-github"></a>
+            <a href="https://mastodon.social/@korjubzot" class="fa-brands fa-mastodon"></a>
+        </div>
     </footer>
 </body>
 </html>
